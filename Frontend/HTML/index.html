@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos HTML</title>
+</head>
+
+<body>
+
+
+    <!-- Heading -->
+    <h1>
+        <a href="cv.html">Curriculum Vitae</a>
+    </h1>
+    <h2>Titulo H2</h2>
+    <h3>Titulo H3</h3>
+    <h4>Titulo H4</h4>
+    <h5>Titulo H5</h5>
+    <h6>Titulo H6</h6>
+
+    <!--Salto de linea-->
+    <br>
+
+    <!--Linea horizontal ancho de pagina-->
+    <hr>
+
+    <!--Parrafo para trabajar con texto-->
+    <p>
+        <b> ipsum </b> dolor
+        <i>sit</i>
+        <u>consectetur</u> adipisicing elit.
+    </p>
+    <p>
+        <b>
+            <i>
+                <u>
+                    Leonardo Utreras
+                </u>
+            </i>
+        </b>
+    </p>
+
+    <br>
+    <hr>
+
+    <!--Imagenes-->
+    <img src="assets/img/imagen-38.png" alt="imagen1">
+
+    <!-- al agregar solo width o height la imagen mantendra la proporcion -->
+    <img src="assets/img/html.png" alt="imagen2" width="100">
+
+    <br>
+    <hr>
+
+    <!-- Links o Hipervinculos -->
+    <!-- Redirige a otro sitio -->
+    <!-- target="_blank" abre la pagina en otra pestaña -->
+    <a href="https://www.google.com/" target="_blank">Google</a>
+    <br>
+    <!-- url de valor relativo -->
+    <a href="pagina2.html">Ir a pagina 2</a>
+    <br>
+    <!-- url valor anclaje, movernos dentro de la misma pagina -->
+    <a href="#nombre">ir a seccion de la pagina</a>
+    <br>
+    <!-- Reemplazar el texto por una imagen -->
+    <a href="pagina2.html">
+        <img src="assets/img/maxresdefault.jpg" alt="Panda Enojado" width="150">
+    </a>
+    <!-- En eL JSP los HREF son de RUTAS(URL) en cambio en el HTML corresponde a la pagina-->
+
+    <!-- Listas : Ordenadas y las No Ordenadas -->
+
+    <!-- Order List -->
+    <ol>
+        <!-- List Items -->
+        <li>Grupo1</li>
+        <li>Grupo2</li>
+        <li>Grupo3</li>
+        <li>Grupo4</li>
+        <li>Grupo5</li>
+        <li>Grupo6</li>
+        <li>Grupo 7
+            <ol>
+                <li>Grupo 7.1</li>
+                <li>Grupo 7.2</li>
+            </ol>
+        </li>
+    </ol>
+    <br>
+
+    <ul>
+        <li>grupo 1</li>
+        <li>grupo 2</li>
+        <li>grupo 3</li>
+        <li>grupo 4</li>
+        <li>grupo 5</li>
+        <li>grupo 6</li>
+        <li> grupo 7
+            <ul>
+                <li>grupo 7.1</li>
+                <li>grupo 7.2</li>
+                <li>Cursos
+                    <ul>
+                        <li>curso a</li>
+                        <li>curso b</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <!-- ESTO CORRESPONDE AL JSP -->
+    <!--
+    <ul>
+        <c:forEach items="${lista}" var="item">
+            <li>${item}</li>
+        </c:forEach>
+    </ul>
+    -->
+
+    <br>
+    <hr>
+    <table>
+        <thead>
+            <!-- Table Row, es la cabecera de la tabla, solo lleva un TR  -->
+            <tr>
+                <th>Edad</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Por cada TH del THEAD agregaremos un TD -->
+            <!-- Podemos agregar TR como Datos tengamos -->
+            <tr>
+                <td>26</td>
+                <td>Leonardo</td>
+                <td>Utreras</td>
+            </tr>
+            <tr></tr>
+        </tbody>
+    </table>
+
+
+
+
+
+
+
+</body>
+
+</html>
