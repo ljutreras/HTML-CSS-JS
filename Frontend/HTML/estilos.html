@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styles</title>
+    <style>
+        /*3 formas basicas de asignar un estilo*/
+        /*por elemento HTML, todas las etiquetas se ven afectadas*/
+        /* BACKGROUND-COLOR nos proporciona el color de fondo de la etiqueta */
+        /* El PX es un valor estatico, el % es un valor dinamico que mantiene la proporcion */
+        
+        div {
+            background-color: bisque;
+            width: 500px;
+        }
+        
+        p {
+            background-color: salmon;
+            color: black;
+        }
+        /* Se puede trabajar en PX , %, Estos se ocupan habitualmente */
+        /* EM (es igual a 16px) y REM */
+        /* Al utilizar % se refiere al %total del contenedor*/
+        /* En este caso es el 50% de 500px(DIV), es decir, 250px */
+        
+        img {
+            width: 50%;
+        }
+        /* 2.- Por clases, se ven afectados solo aquellas etiquetas que tengan la clase */
+        /* cualquier etiqueta */
+        /* Las clases se definen por un punto "." */
+        /* Los estilos de la clase se heredan a sus hijos */
+        /* De haber un DIV padre con 5 P dentro, 
+        si la clase se le coloca en el DIV, todo su contenido tendra el estilo */
+        /* Si el estilo que generamos está mas cerca de la etiqueta
+        esta se le va generar, es decir, si tenemos un estilo en la etiqueta P
+        pero a su vez un estilo en la CLASE, el P quedara con su estilo aunque sea hijo del DIV */
+        
+        .parrafos {
+            color: green;
+        }
+        
+        .generation1 {
+            color: blueviolet;
+        }
+        /* 3.- Por ID, estilo especifico para la etiqueta */
+        /* Para trabajar con un ID trabajamos con un # */
+        /* El ID es UNICO */
+        
+        #idParrafo {
+            color: greenyellow;
+        }
+        
+        #pg1 {
+            color: cadetblue;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <div>
+        <p>parrafo 1</p>
+        <p class="parrafos">parrafo 2</p>
+        <p>parrafo 3</p>
+        <p id="idParrafo">parrafo 4</p>
+        <img src="/assets/img/html.png" alt="front">
+    </div>
+
+    <div class="parrafos">
+        <p>parrafo 5</p>
+    </div>
+
+    <p id="pg1" class="generation1">parrafo 6</p>
+
+</body>
+
+</html>

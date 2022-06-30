@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- ACTION ruta o url -->
+    <!-- GET ver elementos en URL -->
+    <!-- POST ocultar elementos en URL -->
+    <form action="" method="post">
+        <!-- PLACEHOLDER es el texto fantasma del input -->
+        <!-- REQUIRED es el campo de llenado requerido -->
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" name="apellido" placeholder="Ingresa tu apellido" required>
+        <br>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+        <br>
+        <label for="pass">Password</label>
+        <input type="password" id="pass" name="pass">
+        <br>
+        <!-- MIN y MAX solo para el elemento DATE establecemos fecha minima y maxima -->
+        <label for="fecha">Date</label>
+        <input type="date" name="fecha" id="fecha" min="2000-01-01" max="2100-01-01">
+        <br>
+        <!-- Muestra calendario y hora -->
+        <label for="fecha2">DateTimeLocal</label>
+        <input type="datetime-local" name="fecha2" id="fecha2">
+        <br>
+        <!-- Elemento oculto visualmente -->
+        <input type="hidden" name="id" id="id" value="77">
+        <br>
+        <!-- Area de texto -->
+        <!-- COLS tamaño de columnas (ancho del area) -->
+        <!-- ROWS alto de area -->
+        <!-- MAXLENGTH nos limita la cantidad de caracteres -->
+        <!-- MINLENGTH es el minimo de caracteres que debemos usar, de lo contrario te aparece un mensaje en HTML -->
+        <textarea id="textarea" name="textarea" cols="50" rows="30" maxlength="10" minlength="5"></textarea>
+
+        <input type="submit" value="Enviar">
+        <button type="submit"> EnviarButton </button>
+
+    </form>
+
+</body>
+
+</html>

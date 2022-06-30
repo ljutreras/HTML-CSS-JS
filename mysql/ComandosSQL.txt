@@ -1,0 +1,4 @@
+#creacion de base de datos
+create database 'nombre_baseDatos';
+
+https://gguzmann.github.io/notas/mysql.html
