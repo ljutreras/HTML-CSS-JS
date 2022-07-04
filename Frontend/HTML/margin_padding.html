@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin Padding</title>
+    <style>
+        #padre {
+            width: 400px;
+            height: 400px;
+            background-color: brown;
+            /* border = Ancho tipoDeLinea Color */
+            /* El border controla el espacio de los hijos */
+            /* Impide que el HIJO mueva al PADRE */
+            border: 1px solid black;
+        }
+        
+        #hijo {
+            width: 10%;
+            height: 10%;
+            background-color: aqua;
+            margin: 10px;
+        }
+        /* Alineacion vertical por default (Bottom) */
+        
+        #default1 {
+            width: 50px;
+            height: 100px;
+            background-color: red;
+            display: inline-block;
+        }
+        
+        #default2 {
+            width: 50px;
+            height: 200px;
+            background-color: blue;
+            display: inline-block;
+        }
+        /* Alineacion vertical superior (Top)*/
+        
+        #top1 {
+            width: 50px;
+            height: 100px;
+            background-color: red;
+            display: inline-block;
+            vertical-align: top;
+        }
+        
+        #top2 {
+            width: 50px;
+            height: 200px;
+            background-color: blue;
+            display: inline-block;
+            vertical-align: top;
+        }
+        /* Alineacion vertical central (Middle) */
+        
+        #middle1 {
+            width: 50px;
+            height: 100px;
+            background-color: red;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        
+        #middle2 {
+            width: 50px;
+            height: 200px;
+            background-color: blue;
+            display: inline-block;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="padre">
+        <div id="hijo">
+
+        </div>
+    </div>
+
+    <div>
+        <div id="default1"></div>
+        <div id="default2"></div>
+    </div>
+
+    <div>
+        <div id="top1"></div>
+        <div id="top2"></div>
+    </div>
+
+    <br>
+
+    <div>
+        <div id="middle1"></div>
+        <div id="middle2"></div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>

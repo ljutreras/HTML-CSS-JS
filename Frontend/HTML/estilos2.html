@@ -7,13 +7,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Styles2</title>
     <style>
-
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        p {
+            /* Ancho */
+            width: 200px;
+            /* Alto */
+            height: 50px;
+            /*  */
+            display: block;
+        }
+        
+        div {
+            /* Barra de desplazamiento */
+            width: 400px;
+            height: 400px;
+            /*overflow: scroll;
+            background: url("/assets/img/imagen-38.png") no-repeat center;*/
+            background-size: 50%;
+        }
+        /* posision: static, relative, fixed, absolute, sticky */
+        
+        .estatico {
+            width: 500px;
+            height: 20px;
+            /* Posicion Original */
+            position: static;
+        }
+        
+        .relativo {
+            width: 500px;
+            height: 20px;
+            /* Posicion relativa */
+            position: relative;
+        }
     </style>
 </head>
 
 <body>
+    <h1>Elementos de estilo</h1>
     <div>
-
+        <a href="#">Link de prueba</a>
+        <p>Parrafo 1</p>
+    </div>
+    <div class="estatico">
+        <p>Este es un texto con propiedad Static</p>
+    </div>
+    <div class="relativo">
+        <p>Este es un texto con propiedad Static</p>
     </div>
 </body>
 
