@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO GRUPAL 1</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script>
+        $(document).ready(function() {
+            //PETICION AJAX
+            //mesclar todo 
+            //17:15 
+            //dibujar con el for (como queramos) 
+            for (let i = 1; i < 121; i++) {
+                $('.container').append('<img class="pokeapi' + i + '" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/' + i + '.png">');
+                //luego de dibujar, cada vez que hagamos click en la imagen
+                $('.pokeapi' + i + '').click(function() {
+                    let pokemonClick = $('i').val();
+                    $.get('https://pokeapi.co/api/v2/pokemon/' + i + '/', function(respuesta) {
+                        //en esta parte procesamos la respuesta
+                        //aquí imprimo en consola para ver los atributos
+                        console.log(respuesta);
+                        //capturamos los atributos con una variable let
+                        let imagen = respuesta.sprites.front_default;
+                        let nombre = respuesta.name;
+                        let peso = respuesta.weight;
+                        let tipo = respuesta.types[0].type.name;
+                        //aquí cambiamos el contenido HTML del div Pokedex
+                        $('.pokeapi').html('<img style="display: block; background-color: antiquewhite; margin-left: auto; margin-right: auto;" src="' + imagen + '" alt="' + nombre + '">' + "Nombre Pokemon: " + '<h1 class="nombrePokemon">' + nombre + '</h1>' + "Peso pokemon: " + '<h2 class="pesoPokemon">' + peso + '</h2>' + "Tipo de Pokemon: " + '<h2 class="tipoPokemon">' + tipo + '</h2>');
+                        //$('.container').append('<h1>' + nombre + '</h1>');
+                    }, 'json');
+                });
+            }
+
+
+
+        });
+    </script> -->
+</head>
+
+<body>
+    <div>
+        <img src="/assets/img/pokeDex.webp" alt="PokeDex">
+    </div>
+    <div class="display">
+    </div>
+    <button class="next"></button>
+    <button class="previous"></button>
+    <button class="list"></button>
+    <button class="home"></button>
+</body>
+
+</html>

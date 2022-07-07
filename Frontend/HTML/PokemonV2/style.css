@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Selectores por clase */
+
+.pokeApi img {
+    width: 500px;
+}
+
+.display {
+    border: 1px solid transparent;
+    background-color: antiquewhite;
+    position: absolute;
+    top: 360px;
+    left: 241px;
+    width: 312px;
+    height: 190px;
+}
+
+.next {
+    border: 1px solid vlack;
+    /* background-color: antiquewhite; */
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 10px;
+    height: 10px;
+}
+
+.previous {
+    border: 1px solid black;
+    /* background-color: antiquewhite; */
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 10px;
+    height: 10px;
+}
+
+.list {
+    border: 1px solid black;
+    /* background-color: antiquewhite; */
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 10px;
+    height: 10px;
+}
